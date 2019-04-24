@@ -41,6 +41,7 @@
   background: #cb2431;
   color: white;
   z-index: 9999;
+  opacity: 0.9;
 }
 
 .gitlock-page-block.hide {
