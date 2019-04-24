@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "GitLock",
+  "version": "1.2",
+
+  "description": "Adds a red border to github pull request pages",
+
+  "icons": {
+    "48": "icons/gitlock-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*/pull/*"],
+      "js": ["assets/js/gitlock.js"],
+      "css": ["assets/css/gitlock.css"]
+    }
+  ]
+
+}

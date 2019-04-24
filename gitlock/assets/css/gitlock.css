@@ -1,0 +1,61 @@
+.gitlock-ext::before {
+  content: 'No pull requests after 4pm Mon-Thu, 2pm Fri';
+  background-color: #212121;
+  color: white;
+  padding: 1em;
+  font-family: sans-serif;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 8000;
+  font-size: 1.6rem;
+  border-bottom: 5px solid #cb2431;
+}
+
+.branch-action-body.gitlock-alert {
+  border: 20px solid #cb2431;
+}
+
+.branch-action-body.gitlock-alert .merge-message::before,
+.branch-action-body.gitlock-alert .merge-message::after {
+  content: 'No pull requests after 4pm Mon-Thu, 2pm Fri';
+  font-size: 1.6rem;
+  background-color: #cb2431;
+  color: white;
+  border: 6px dashed white;
+  padding: 0.5em;
+  margin: 0.4em 0;
+  display: block;
+}
+
+.gitlock-page-block {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 5em;
+  background: #cb2431;
+  color: white;
+  z-index: 9999;
+}
+
+.gitlock-page-block.hide {
+  display: none;
+}
+
+.gitlock-page-block > * {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+.gitlock-page-block a {
+  color: white;
+  text-decoration: underline;
+}
