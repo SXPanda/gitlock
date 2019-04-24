@@ -4,7 +4,7 @@
   "name": "GitLock",
   "version": "0.1",
 
-  "description": "Adds a red border to github pull request pages",
+  "description": "A GitHub extension for restricting pull requests after specified times",
 
   "icons": {
     "48": "icons/gitlock-48.png"
